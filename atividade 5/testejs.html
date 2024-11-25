@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        function minhafuncao(arg1,arg2){
+
+            var soma =  arg1 + arg2
+            var msg = 'A soma é igual a: '
+            alert ( msg +soma);
+        }
+        function escreve(arg){
+            document.write(arg)
+        }
+        function carregarimg1(){
+            alert('Ahri sabugueiro')
+            document.getElementById('img').setAttribute("src" , "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_7.jpg" )
+            document.getElementById("mudar-imagem").setAttribute("onclick", "carregarimg2()")
+        }
+        function carregarimg2(){
+            alert('Ahri fliperama')
+            document.getElementById('img').setAttribute("src" , "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_17.jpg" )
+            document.getElementById("mudar-imagem").setAttribute("onclick", "carregarimg1()")
+        }
+    </script>
+</head>
+
+<body>
+   
+    <H1> Javascript </H1>
+    <button onclick="minhafuncao(190,390)"> Clique</button>
+    <button onclick="escreve('<h1> Se curvem a sua verdadeira rainha </h1>')"> Escreve</button>
+    <button id="mudar-imagem" onclick="carregarimg1()">Trocar imagem</button>
+    <div id="phonsy" >
+        <img id="img" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_17.jpg" alt="">
+    </div>
+
+</body>
+</html>y
