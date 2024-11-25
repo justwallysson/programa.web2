@@ -21,3 +21,5 @@ function escreveDiv2(){
     var texto2 = prompt('Me diz seu persongame fav de genshin veyr: ')
     document.getElementById('escreve-div').innerHTML = texto2
 }
+
+

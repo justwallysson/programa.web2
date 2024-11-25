@@ -27,10 +27,17 @@
                 container.innerHTML += tag;
         }
     }
-    function posicaolinguagens(){
+
+        function apagarLinguagens(){
+        const container = document.getElementById('minhaDiv');
+        container.innerHTML = "";
+    }
+
+        function posicaolinguagens(){
         var indice = prompt('Qual posição da lista deseja consultar?');
         alert(linguagens [indice]);
     }
+
     </script>
 
 </head>
@@ -39,6 +46,7 @@
     <a href="desafioarray.html">Desafio Array das frutas</a>
 
     <h1>ARRAY DE LINGUAGENS</h1>
+    <button onclick="apagarLinguagens()">APAGAR TEXTO</button>
     <button onclick="mostrarlinguagens()">CRIAR ARRAY</button> <br><br>
     <button onclick="posicaolinguagens()">Posição no Array</button>
     
