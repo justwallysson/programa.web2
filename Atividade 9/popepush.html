@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop e push</title>
+
+    
+    <script> 
+
+        let lista = Array();
+
+        function mostrarlista() {
+        const container = document.getElementById('minhaDiv');
+            for (var i = 0; i < lista.length; i++){
+                var tag ='<h5>' + i + '-' + lista[i] + '</h5>';
+                container.innerHTML += tag;
+            }
+
+    }
+
+        function apagar(){
+        const container = document.getElementById('minhaDiv');
+        container.innerHTML = "";
+    }
+
+
+        function push(){
+        var nome = prompt('Qual o nome da pessoa? ');
+        lista.push(nome);
+        apagar();
+        mostrarlista();
+        
+    }   
+
+        
+        function pop(){
+        nome = lista.pop();
+        alert('Você removeu ' + nome);
+        apagar();
+        mostrarlista();
+        
+    }   
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>POP E PUSH</h1>
+    <button onclick="push()">Adicionar pessoa</button>
+    <button onclick="pop()">Remover pessoas</button> <br><br>
+    
+    <div id="minhaDiv"></div>
+    
+</body>
+
+</html>     
