@@ -20,3 +20,16 @@ if numero % 2 == 0:
     print("O numero é par")
 else:
     print("O numero é impar")
+
+
+nome = input("Me diga seu nome: ")
+idade = int(input("Agora sua idade: "))
+
+num1 = float(input("Digite um numero: "))
+num2 = float(input("Digite outro numero: "))
+soma = num1+num2
+diferenca = num1-num2
+produto = num1*num2
+print(f"A soma é {soma}.")
+print(f"A difrença é {diferenca}")
+print(f"O produto é {produto}")
